@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Herramientas de Python para Análisis de Datos</title>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<h1>Herramientas de Python para Análisis de Datos</h1>
+	<p>Algunas herramientas populares para el análisis de datos con Python incluyen:</p>
+	<ul>
+		<li>Pandas</li>
+		<li>NumPy</li>
+		<li>Matplotlib</li>
+		<li>Seaborn</li>
+	</ul>
+
+	<h2>Ejemplo: Gráfico con Plotly</h2>
+
+	<div id="plot"></div>
+
+	<script>
+		var trace1 = {
+		  x: [1, 2, 3, 4],
+		  y: [10, 11, 12, 13],
+		  type: 'scatter'
+		};
+
+		var data = [trace1];
+
+		var layout = {
+		  title: 'Gráfico con Plotly'
+		};
+
+		Plotly.newPlot('plot', data, layout);
+	</script>
+
+</body>
+</html>
